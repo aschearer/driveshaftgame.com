@@ -66,6 +66,18 @@ __Configure CloudFront__
 Navigate to AWS CloudFront, select the newly created site, and edit its details. Under "SSL Certificate" select "Custom SSL Certificate" and save your changes (if you have not already created your certificate select "Request or Import Certificate" and complete the process). Next navigate to the Behaviors tab and edit the default behavior. Under "Viewer Protocol Policy" select "Redirect HTTP to HTTPS" and save changes.
 Finally, navigate to the Error Pages tab and configure error pages as necessary for the web page.
 
+__Setup "Bare" Domain__
+At this point navigating to `www.yoursite.com` will work as expected. But if the user navigates to `yoursite.com` it will fail. To fix this:
+
+  1. Create a new S3 bucket named `yoursite.com`
+  1. Give it public read permissions
+  1. Enable "Static Web Hosting"
+  1. Configure the hosting to "Redirect Requests", enter "www.yoursite.com"
+  1. Go to Route 53
+  1. Create a new A-record, it should have no prefix
+  1. Mark it as an "Alias"
+  1. Select the S3 bucket that pops up in the list (should correspond with the one just created)
+
 How to Publish an Update to an Existing Site
 ---
 
