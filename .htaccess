@@ -1,0 +1,44 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+# Rewrite directories that do not exist
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+
+# Rewrite pages lacking HTML extension
+RewriteCond %{REQUEST_URI} !^.*\.html$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.html
+
+# Redirect app pages
+RedirectMatch 301 ^/app/scramblelegends$ /scramble-legends
+RedirectMatch 301 ^/app/(.*)$ /$1
+RedirectMatch 301 ^/adlib.htmlstore$ /adlib.html
+
+# Set an error handling page
+ErrorDocument 404 /404.html
+
+# Expires headers
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html M36000
+    ExpiresByType text/css M36000
+    ExpiresByType text/javascript M36000
+    ExpiresByType application/javascript M36000
+    ExpiresByType application/x-javascript M36000
+    ExpiresByType image/ico A7776000
+    ExpiresByType image/bmp A7776000
+    ExpiresByType image/gif A7776000
+    ExpiresByType image/x-icon A7776000
+    ExpiresByType image/jpeg A7776000
+    ExpiresByType image/png A7776000
+</IfModule>
+
+# Compress html, css, and javascript
+<ifmodule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
+</ifmodule>
+

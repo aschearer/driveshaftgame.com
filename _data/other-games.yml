@@ -1,0 +1,36 @@
+- name: Petunk
+  year: 2010
+  platform: Flash
+  description: Puzzle game crafted from construction paper
+  thumb: petunk.thumb.jpg
+  url: http://games.spottedzebrasoftware.com/petunk-original
+- name: Type-Oh!
+  year: 2010
+  platform: Flash
+  description: An action-arcade typing puzzle game for Facebook
+  thumb: type-oh.thumb.jpg
+  url: 
+- name: Adlib
+  year: 2009
+  platform: Flash
+  description: A word game inspired by Tetris and Bejeweled
+  thumb: adlib.jpg
+  url: http://games.spottedzebrasoftware.com/adlib-original
+- name: Fluster
+  year: 2008
+  platform: Flash
+  description: Vacuum cleaning platformer. Entry for a game contest
+  thumb: fluster.jpg
+  url: http://games.spottedzebrasoftware.com/fluster
+- name: Shade
+  year: 2008
+  platform: Java
+  description: Collect mushrooms while avoiding the sun
+  thumb: shade.jpg
+  url: http://games.spottedzebrasoftware.com/shade
+- name: Forte
+  year: 2008
+  platform: Java
+  description: Tank versus tank warfare. Inspired by Wii Play
+  thumb: forte.jpg
+  url: http://games.spottedzebrasoftware.com/forte

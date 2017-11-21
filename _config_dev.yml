@@ -1,0 +1,4 @@
+# SITE CONFIGURATION
+theme_settings:
+    google_analytics: false
+url: "http://localhost:8080" # the base hostname & protocol for your site

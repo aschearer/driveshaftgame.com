@@ -1,0 +1,20 @@
+{
+  "name": "spottedzebra.us",
+  "version": "1.0.0",
+  "description": "Website for Spotted Zebra",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Schearer <aschearer@spottedzebra.us>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aschearer/spottedzebra.us.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-exec": "^2.1.3",
+    "gulp-util": "^3.0.7"
+  }
+}

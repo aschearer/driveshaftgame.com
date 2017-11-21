@@ -1,0 +1,42 @@
+- name: Monter's Crush
+  year: 2013
+  platform: Flash
+  gamejam: Global Game Jam 2013
+  description: Monster-human romance simulator
+  thumb: monsters-crush.thumb.jpg
+  url: http://games.spottedzebrasoftware.com/monsterscrush
+- name: Move the Cheese
+  year: 2012
+  platform: XNA
+  gamejam: Ludum Dare 24
+  description: Starring a psychic mouse with the munchies
+  thumb: move-the-cheese.thumb.jpg
+  url: http://games.spottedzebrasoftware.com/move-the-cheese
+- name: Soldier 238
+  year: 2012
+  platform: XNA
+  gamejam: Bacon Game Jam 2012
+  description: Tank warfare on steroids. Inspired by Forte
+  thumb: soldier-238.thumb.jpg
+  url: http://games.spottedzebrasoftware.com/soldier-238
+- name: Energy Crisis
+  year: 2012
+  platform: Silverlight
+  gamejam: Global Game Jam 2012
+  description: Circuit board simulating puzzle game
+  thumb: energy-crisis.thumb.jpg
+  url: http://games.spottedzebrasoftware.com/energy-crisis
+- name: Eat, Prey, Love
+  year: 2011
+  platform: Silverlight
+  gamejam: Global Game Jam 2011
+  description: Eco-system management meets match-3
+  thumb: eat-prey-love.thumb.jpg
+  url: http://games.spottedzebrasoftware.com/eat-prey-love
+- name: The Cleaner
+  year: 2010
+  platform: Flash
+  gamejam: Global Game Jam 2010
+  description: Murder mystery hidden adventure
+  thumb: the-cleaner.thumb.jpg
+  url: http://games.spottedzebrasoftware.com/the-cleaner

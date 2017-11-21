@@ -1,0 +1,18 @@
+{% if site.theme_settings.katex %}
+<script src="{{ "/js/katex_init.js" | prepend: site.baseurl }}"></script>
+{% endif %}
+
+{% if site.theme_settings.footer_text %}
+<footer class="site-footer">
+    <p class="text">Drive//Shaft was created by <img class="logo" src="{{ site.baseurl }}/img/logo.jpg" alt="Spotted Zebra Logo" /> Spotted Zebra Software LLC</p>
+    <span class="text">{{ site.theme_settings.footer_text }}</span>
+    {% if site.theme_settings.twitter %}
+    &bull;
+    <a href="https://twitter.com/{{site.theme_settings.twitter}}">Twitter</a>
+    {% endif %}
+    {% if site.theme_settings.facebook %}
+    &bull;
+    <a href="https://facebook.com/{{site.theme_settings.facebook}}">Facebook</a>
+    {% endif %}
+</footer>
+{% endif %}

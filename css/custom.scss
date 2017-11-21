@@ -1,0 +1,202 @@
+---
+---
+
+html {
+    background-color: #003d57;
+}
+
+.page-link {
+    margin: 0 0.4em;
+}
+
+.page-link:hover {
+    color: #1ABC9C;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    box-shadow: 0px 0px 20px #f1f1f170;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a.center {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.screenshots {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    list-style-type: none;
+}
+
+.quotes {
+    list-style-type: none;
+}
+
+.profile img {
+    display: block;
+    margin: auto;
+}
+
+table {
+    overflow-x: auto;
+}
+
+figure {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+figure.full-size {
+    width: 100%;
+}
+
+figure.small {
+    width: 25%;
+}
+
+figure img { 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+figure figcaption {
+    font-size: medium;
+    text-align: center;
+    color: rgba(56,56,56,0.5);
+}
+
+.continue-reading {
+    background-color: #fafafa;
+    font-size: medium;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.continue-reading header {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.continue-reading li {
+    list-style-type: square;
+    margin: 5px 0;
+}
+
+.about-the-author {
+    background-color: #fafafa;
+    font-size: medium;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.about-the-author img {
+    float: left;
+    margin: 0 13px 5px 0;
+}
+
+.about-the-author header {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.about-the-author p {
+    margin-bottom: 0.5em;
+}
+
+.clear {
+    clear: both;
+}
+
+.other-game {
+    width: 49%;
+    float: left;
+}
+
+.other-game .thumb {
+    margin-bottom: 10px;
+}
+
+.other-game img {
+}
+
+.other-game figcaption table {
+    display: normal;
+    margin: 0;
+}
+
+.other-game.odd {
+    margin-right: 2%;
+}
+
+.site-header {
+    background-color: #000813;
+    border-bottom: 2px solid #000a16;
+}
+
+.site-header a {
+    color: white;
+}
+
+.site-footer {
+    color: white;
+    background-color: #003d57;
+    border-top: 2px solid #000a16;
+}
+
+.site-footer .logo {
+    position: relative;
+    top: 8px;
+    right: 2px;
+}
+
+.site-footer a {
+    color: white;
+}
+
+article {
+    background: #022b43;
+    color: white;
+    background: -webkit-linear-gradient(#011e30, #022b43); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#011e30, #022b43); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#011e30, #022b43); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#011e30, #022b43); /* Standard syntax */
+}
+
+#steam_widget {
+    position: relative;
+    padding-bottom: 20.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+#steam_widget iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
