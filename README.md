@@ -24,6 +24,13 @@ Building and Running
   1. Run `gulp` to build the site.
   1. Navigate to `_site/` and launch `index.html` in the browser.
 
+Running using http-server
+---
+  1. Open up PowerShell.
+  1. Run `npm install -g http-server`
+  1. Navigate to the `_site/` directory.
+  1. Run `http-server`
+
 Running in IIS
 ---
   1. Go to the "Turn Windows features on or off" app from the Start Menu.
@@ -43,8 +50,6 @@ At this point it's assumed you have an AWS account.
 
 How to Publish a New Site
 ---
-
-TBD
 
 __Create the S3 bucket, CloudFront site, and Route53 configuration using Stout__
 
