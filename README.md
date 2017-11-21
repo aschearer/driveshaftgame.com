@@ -67,6 +67,7 @@ Navigate to AWS CloudFront, select the newly created site, and edit its details.
 Finally, navigate to the Error Pages tab and configure error pages as necessary for the web page.
 
 __Setup "Bare" Domain__
+
 At this point navigating to `www.yoursite.com` will work as expected. But if the user navigates to `yoursite.com` it will fail. To fix this:
 
   1. Create a new S3 bucket named `yoursite.com`
