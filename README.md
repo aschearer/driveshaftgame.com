@@ -7,14 +7,16 @@ Prerequisites
   1. [Node & NPM](https://nodejs.org/)
   1. [Ruby](https://rubyinstaller.org/)
   1. [AWS Command Line Interface](http://aws.amazon.com/cli/)
+  1. Make sure NPM is in your PATH: `~\AppData\Roaming\npm`
 
 Make sure all of the above is available via the `PATH` environment variable.
 
 From PowerShell run:
 
-  1. `npm install gulp-cli -g` to install gulp.
+  1. `npm install gulp-cli -g` to install gulp for the computer.
   1. `gem install bundler` to install Bundler.
   1. `bundle install` to install gems listed in the Gemfile.
+  1. `npm install` to install NPM packages listed in `package.json`.
 
 Building and Running
 ---
