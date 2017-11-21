@@ -12,13 +12,13 @@ screenshots:
 
 <div class="windows-surface">
     <div class="video">
-        <iframe src="https://www.youtube.com/embed/jgvjUnVdto4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="//www.youtube.com/embed/jgvjUnVdto4" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 <br />
 
 <div id="steam_widget">
-    <iframe src="http://store.steampowered.com/widget/747590/" frameborder="0" width="900" height="190"></iframe>
+    <iframe src="//store.steampowered.com/widget/747590/" frameborder="0" width="900" height="190"></iframe>
 </div>
 
 <div id="about" style="text-align: center">
