@@ -61,7 +61,7 @@ Make sure to replace the key and secret with your AWS account's information. Thi
 
 __Configure CloudFront__
 
-Navigate to AWS CloudFront, select the newly created site, and edit its details. Under "SSL Certificate" select "Custom SSL Certificate" and save your changes. Next navigate to the Behaviors tab and edit the default behavior. Under "Viewer Protocol Policy" select "Redirect HTTP to HTTPS" and save changes.
+Navigate to AWS CloudFront, select the newly created site, and edit its details. Under "SSL Certificate" select "Custom SSL Certificate" and save your changes (if you have not already created your certificate select "Request or Import Certificate" and complete the process). Next navigate to the Behaviors tab and edit the default behavior. Under "Viewer Protocol Policy" select "Redirect HTTP to HTTPS" and save changes.
 Finally, navigate to the Error Pages tab and configure error pages as necessary for the web page.
 
 How to Publish an Update to an Existing Site
