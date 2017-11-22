@@ -12,7 +12,7 @@ screenshots:
 
 <div class="windows-surface">
     <div class="video">
-        <iframe src="//www.youtube.com/embed/jgvjUnVdto4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="//www.youtube.com/embed/R6za6mUeSw8" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 <br />
