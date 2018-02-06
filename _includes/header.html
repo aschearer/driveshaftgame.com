@@ -1,23 +1,32 @@
-<header class="site-header">
-	<div class="branding">
-		<h1 class="site-title">
-			<a href="{{ site.baseurl }}/">
-				<img src="{{ site.baseurl }}/img/DriveShaft Logo.png" alt="{{ site.theme_settings.title }}" />
-			</a>
-		</h1>
-	</div>
-	<nav class="site-nav">
-		<ul>
-			<li>
-				<a class="page-link" href="{{ site.baseurl }}/">
-					About
-				</a>
-			</li>
-			<li>
-				<a class="page-link" href="{{ site.baseurl }}/press">
-					Press
-				</a>
-			</li>
-		</ul>
-	</nav>
-</header>
+<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}"><img src="/img/DriveShaft Logo.png" alt="Drive//Shaft" /></a>
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="{{ "/" | relative_url }}">About </a></li>
+            {% if page_paths %}
+                {% for path in page_paths %}
+                    {% assign my_page = site.pages | where: "path", path | first %}
+                    {% if my_page.title %}
+                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.prettyName | escape }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}              
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">About</a></li>
+                            {% if page_paths %}
+                {% for path in page_paths %}
+                    {% assign my_page = site.pages | where: "path", path | first %}
+                    {% if my_page.title %}
+                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.prettyName | escape }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            {% endif %} 
+          </ul>        
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>

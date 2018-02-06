@@ -1,0 +1,171 @@
+---
+layout: default
+screenshots:
+    - "DriveShaft 01"
+    - "DriveShaft 02"
+    - "DriveShaft 03"
+    - "DriveShaft 04"
+    - "DriveShaft 05"
+    - "DriveShaft 06"
+---
+  <div class="container" id="capsule">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 l8">
+          <div class="video">
+            <iframe src="//www.youtube.com/embed/R6za6mUeSw8" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="screenshots">
+          {% for screenshot in layout.screenshots %}
+            <div class="screenshot">
+              <a href="screenshots/{{ screenshot }}.jpg" data-featherlight="image"><img src="screenshots/{{ screenshot }} Thumbnail.jpg" /></a>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+        <div class="col s12 l4">
+          <img src="/img/Capsule Image.png" alt="Drive//Shaft Header" width="100%" />
+          <p>
+            Drive//Shaft is an open-world, physics-based, multiplayer car racing game. 
+            Your mission is to be the first player to reach the mysterious glowing orb. 
+            First to ten wins. This is a great game if you have time to kill and want 
+            something fun to play.
+          </p>
+          <p>
+            Drive//Shaft is available for Windows and requires 
+            <a href="http://store.steampowered.com/app/747590/DriveShaft/">Steam</a>.
+          </p>
+          <p class="review-sentiment">
+            <span class="review-count">Reviews:</span>
+            Mostly Positive <span class="review-count">(23)</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row center">
+        <div class="col s12">
+          <a href="https://transactions.sendowl.com/products/77722669/8151F5A2/purchase" 
+             rel="nofollow" 
+             id="download-button" 
+             class="btn-large waves-effect waves-light orange buy-button">
+            <span class="price">$0.99</span> Buy Now for Steam
+          </a>
+          <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js" ></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+            <h4>Developer's Note</h4>
+            <p>
+              Hi, I'm Alex Schearer the founder of Spotted Zebra Software. 
+              I've been making games for a while, but always in two dimensions. 
+              I wanted to learn how to make 3D games and decided that making 
+              a game a week was a good, challenging way to do so. 
+            </p>
+            <p>
+              Drive//Shaft is my first week long game. You're driving a fast 
+              car late at night on a deserted island, and you're goal is to 
+              collect as many mysterious glowing orbs as possible. The problem 
+              is there are other people on the island, too, and they're all 
+              better drivers than you! Drive//Shaft is a simple game which is 
+              fun because driving fast at night is fun, and because physics 
+              based, online gameplay is fun.
+            </p>
+            <p>
+              I'm releasing Drive//Shaft for one dollar so people can join 
+              me in this crazy game-a-week adventure. If you'd like to share 
+              your thoughts, please leave a review or post to the Steam forums. 
+              If I get enough feedback I will improve the game based on 
+              what player's want.
+            </p>
+            <p>
+                Thanks for reading this; I really hope you enjoy the game!<br />
+                Alex Schearer - Spotted Zebra Software
+            </p>
+
+            <h4>Gameplay</h4>
+            <p>
+              Drive a fast car around a large island late a night. Compete against 
+              seven other players to reach the mysterious glowing orb first.
+            </p>
+            
+            <h4>Controls</h4>
+            <p>
+                On keyboard: Use the arrow keys or AWSD to accelerate, brake, or turn.
+            </p>
+            <p>
+                On a gamepad: Use either joystick or the d-pad to turn. Use the triggers to accelerate and brake.
+            </p>
+            
+            <h4>Features</h4>
+            <ul class="browser-default">
+              <li>
+                Huge open world to drive around
+              </li>
+              <li>
+                Realistic car physics
+              </li>
+              <li>
+                Up to 8 players can compete on the same island
+              </li>
+              <li>
+                Beautiful, 3D environment and effects
+              </li>
+              <li>
+                Short, fun pick and play gameplay
+              </li>
+              <li>
+                In-game chat, just press enter and type your message
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.screenshot').featherlight();
+
+    $('.screenshots').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  });
+</script>

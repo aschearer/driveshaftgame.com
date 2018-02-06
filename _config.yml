@@ -1,81 +1,13 @@
-# SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.driveshaftgame.com" # the base hostname & protocol for your site
+title: Drive//Shaft
+author: Alex Schearer
+email: ascherer@spottedzebra.us
+description: > # this means to ignore newlines until "baseurl:"
+  "Drive//Shaft is an open-world, physics-based, multiplayer car racing game."
 
-# THEME-SPECIFIC CONFIGURATION
-theme_settings:
-  # Meta
-  title: Drive//Shaft
-  avatar: logo.jpg
-  gravatar: # Email MD5 hash
-  description: "Drive//Shaft is an open-world, physics-based, multiplayer car racing game." # used by search engines
+twitter_username: ZebraSpotted
+github_username:  aschearer
 
-  # Header and footer text
-  header_text: >
-  header_text_feature_image:
-  footer_text: >
-   Based out of Seattle, Washington
-
-  # Icons
-  rss: false
-  email_address: aschearer@spottedzebra.us
-  behance:
-  bitbucket:
-  dribbble:
-  facebook: schearer
-  flickr:
-  github: "aschearer"
-  google_plus:
-  instagram:
-  linkedin:  # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:  # Full URL
-  steam:
-  tumblr:
-  twitter: AlexSchearer
-  wordpress:
-  youtube:
-
-  # Scripts
-  google_analytics: "UA-34116305-6" # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
-  katex: false # Enable if using math markup
-
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Continue reading"
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Heebo:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: rouge
 sass:
-  sass_dir: _sass
-  style: :compressed
-gems: [jekyll-paginate]
-permalink: blog/:slug.html
-exclude: [
-  "gulpfile.js",
-  "packages.json",
-  "_config.yml",
-  "_config_dev.yml",
-  ".gitignore",
-  "Gemfile*",
-  "node_modules",
-]
+    style: compressed
+
+google_analytics: UA-34116305-6

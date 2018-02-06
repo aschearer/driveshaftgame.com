@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.shadow-demo {
+    background-color: #26a69a;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+h1.page-title {
+    font-weight: 500;
+    font-size: 2.3em;
+    text-align: center;
+    color: #29b6f6;
+}
+.col.grid-example {
+    border: 1px solid #eee;
+    margin: 7px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    background-color: tomato;
+    color: white;
+    padding: 0;
+}
+.collection .collection-item.avatar {
+    padding-right: 30px;
+}
+.last-post {
+    padding: 10px 0 15px;
+}
+.last-post .collection .collection-item.avatar>.date-post {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    left: 10px;
+    display: inline-block;
+    padding: 16px 0;
+    vertical-align: middle;
+    background: #ad1457;
+    color: #fff;
+    text-align: center;
+}
+.txt-center {
+    text-align: center;
+}
+.post-header h1.post-title {
+    color: #29b6f6;
+    font-size: 2.8em;
+    font-weight: 800;
+}
+.post-header time {
+    color: #cacaca;
+    font-size: 0.9em;
+}
+p.rss-subscribe {
+    margin: 0;
+}
+
+body {
+    background: #022b43;
+    color: white;
+    background: -webkit-linear-gradient(#011e30, #022b43);
+    background: -o-linear-gradient(#011e30, #022b43);
+    background: -moz-linear-gradient(#011e30, #022b43);
+    background: linear-gradient(#011e30, #022b43);
+}
+
+.brand-logo img {
+    width: 60%;
+    position: relative;
+    top: 5px;
+}
+
+nav {
+    border-bottom: 2px solid #000a16;
+    margin-bottom: 10px;
+}
+
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.review-count {
+    color: #666;
+}
+
+.screenshots {
+    margin-top: 10px;
+}
+
+.screenshot img {
+    width: 100%;
+    padding: 2%;
+}
+
+.buy-button {
+    padding: 0 2rem 0 0;
+    font-weight: bold;
+}
+
+.buy-button .price {
+    display: inline-block;
+    background: black;
+    padding: 0 2rem;
+    margin-right: 2rem;
+}
+
+.page-footer a {
+    color: #022b43;
+}

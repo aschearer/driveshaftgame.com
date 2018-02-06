@@ -1,18 +1,26 @@
-{% if site.theme_settings.katex %}
-<script src="{{ "/js/katex_init.js" | prepend: site.baseurl }}"></script>
-{% endif %}
-
-{% if site.theme_settings.footer_text %}
-<footer class="site-footer">
-    <p class="text">Drive//Shaft was created by <img class="logo" src="{{ site.baseurl }}/img/logo.jpg" alt="Spotted Zebra Logo" /> Spotted Zebra Software LLC</p>
-    <span class="text">{{ site.theme_settings.footer_text }}</span>
-    {% if site.theme_settings.twitter %}
-    &bull;
-    <a href="https://twitter.com/{{site.theme_settings.twitter}}">Twitter</a>
-    {% endif %}
-    {% if site.theme_settings.facebook %}
-    &bull;
-    <a href="https://facebook.com/{{site.theme_settings.facebook}}">Facebook</a>
-    {% endif %}
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">About Spotted Zebra</h5>
+          <p class="grey-text text-lighten-4">
+              Spotted Zebra Software is a one-person game company in Seattle Washington, USA. 
+              It's most recent larger title was <a href="http://tumblestonegame.com">Tumblestone</a>. 
+              The company was founded by, me, Alex Schearer. I worked at Microsoft for a while then 
+              left to make games. When not game making I help organize for 
+              <a href="https://seattleindies.org">Seattle Indies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div>
+                Made by <a target="_blank" class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                <span style="text-align: right; float: right">
+                Copyright © 2017 <a href="http://www.panoramedia.it" class="orange-text text-lighten-3">Marco Damiani</a>. Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a>
+                </span>
+            </div>
+        </div>
+    </div>
 </footer>
-{% endif %}
