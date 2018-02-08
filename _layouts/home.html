@@ -13,7 +13,11 @@ screenshots:
       <div class="row">
         <div class="col s12 l8">
           <div class="video">
-            <iframe src="//www.youtube.com/embed/R6za6mUeSw8" frameborder="0" allowfullscreen></iframe>
+            <div id="heroTrailer">
+              <a href="//www.youtube.com/embed/R6za6mUeSw8">
+                <img src="/img/Trailer Preview.jpg" alt="Drive//Shaft Trailer" />
+              </a>
+            </div>
           </div>
           <div class="screenshots">
           {% for screenshot in layout.screenshots %}
@@ -167,5 +171,57 @@ screenshots:
         // instead of a settings object
       ]
     });
+  });
+</script>
+
+<script type="text/javascript">
+
+  // This code loads the IFrame Player API code asynchronously
+  var tag = document.createElement('script');
+  tag.src = "http://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // This code is called by the YouTube API to create the player object
+  function onYouTubeIframeAPIReady(event) {
+    player = new YT.Player('heroTrailer', {
+      videoId: 'R6za6mUeSw8',
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  var pauseFlag = false;
+  function onPlayerReady(event) {
+    // do nothing, no tracking needed
+  }
+
+  function onPlayerStateChange(event) {
+      // track when user clicks to Play
+      if (event.data == YT.PlayerState.PLAYING) {
+          ga('send', 'event', 'Media', 'Trailer Started', 'Clicked play on the hero trailer.');
+          pauseFlag = true;
+      }
+      else if (event.data == YT.PlayerState.ENDED) {
+          ga('send', 'event', 'Media', 'Trailer Finished', 'Finished the hero trailer.');
+      }
+  }
+
+  var trackAnalyticEvent = function(eventCategory, eventName, url) {
+    ga('send', 'event', eventCategory, eventName, url, {
+      'transport': 'beacon'
+    });
+  }
+
+  $('#download-button').click(function() {
+    var url = $(this).attr('href');
+    trackAnalyticEvent("Purchase", "Start", url);
+  });
+
+  $('.screenshot a').click(function() {
+    var url = $(this).attr('href');
+    trackAnalyticEvent("Media", "View Screenshot", url);
   });
 </script>
