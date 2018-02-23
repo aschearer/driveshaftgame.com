@@ -205,6 +205,13 @@ screenshots:
       if (event.data == YT.PlayerState.PLAYING) {
           ga('send', 'event', 'Media', 'Trailer Started', 'Clicked play on the hero trailer.');
           pauseFlag = true;
+
+{% if site.facebook_pixel %}
+    fbq('track', 'ViewContent', {
+      content_ids: 'Trailer',
+      content_type: 'Media/Video',
+    });
+{% endif %}
       }
       else if (event.data == YT.PlayerState.ENDED) {
           ga('send', 'event', 'Media', 'Trailer Finished', 'Finished the hero trailer.');
@@ -225,5 +232,12 @@ screenshots:
   $('.screenshot a').click(function() {
     var url = $(this).attr('href');
     trackAnalyticEvent("Media", "View Screenshot", url);
+
+{% if site.facebook_pixel %}
+    fbq('track', 'ViewContent', {
+      content_ids: url,
+      content_type: 'Media/Screenshot',
+    });
+{% endif %}
   });
 </script>
